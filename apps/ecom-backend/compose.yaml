@@ -1,0 +1,12 @@
+services:
+  database:
+    image: 'postgres:latest'
+    ports:
+    - '5432:5432'
+    environment:
+    - 'POSTGRES_USER=codefana'
+    - 'POSTGRES_DB=codefana'
+    - 'POSTGRES_PASSWORD=codefana'
+    volumes:
+    - '.volumes/codefana/postgres:/var/lib/postgresql/data'
+    
