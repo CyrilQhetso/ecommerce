@@ -11,15 +11,15 @@ public class UserReader {
 
     private final UserRepository userRepository;
 
-  public UserReader(UserRepository userRepository) {
-    this.userRepository = userRepository;
-  }
+    public UserReader(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
-  public Optional<User> getByEmail(UserEmail userEmail) {
-    return userRepository.getOneByEmail(userEmail);
-  }
+    public Optional<User> getByEmail(UserEmail userEmail) {
+        return userRepository.getOneByEmail(userEmail);
+    }
 
-  public Optional<User> getByPublicId(UserPublicId userPublicId) {
-    return userRepository.get(userPublicId);
-  }
+    public Optional<User> getByPublicId(UserPublicId userPublicId) {
+        return userRepository.get(userPublicId);
+    }
 }
