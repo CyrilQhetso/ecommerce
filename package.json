@@ -22,6 +22,7 @@
     "@ng-web-apis/universal": "^4.12.0",
     "@tanstack/angular-query-devtools-experimental": "^5.71.10",
     "@tanstack/angular-query-experimental": "^5.71.10",
+    "angular-auth-oidc-client": "^19.0.0",
     "angular-oidc-client": "^1.0.9",
     "express": "^4.21.2",
     "ngxtension": "^5.0.0",
